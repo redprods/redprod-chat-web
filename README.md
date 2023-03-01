@@ -21,13 +21,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Архитектура приложения
 
-> src
->> app(Тут будут папки с роутом) \n
->assets
->components
->constants
->hooks
->utils
+* > src
+* >> app(Тут будут папки с роутом)
+* >assets
+* >components
+* >constants
+* >hooks
+* >utils
 
 
 ## Порядок import(СЛЕДИТЬ!!!)
