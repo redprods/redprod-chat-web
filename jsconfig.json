@@ -2,12 +2,15 @@
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
-    "strict": true
+    "strict": true,
+  "baseUrl": "src",
+
   },
+
   "baseUrl": "./src",
   "paths": {
     "@components/*": ["./src/components/*"]
   },
   "exclude": ["node_modules", "build"],
-  "include": ["src/**/*"]
+  "include": ["src"]
 }

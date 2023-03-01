@@ -1,5 +1,11 @@
+import { HomePageImage, HomePageText, Login, Register } from 'components';
+
 const Home = () => {
-  return <h1>Hello</h1>;
+  return (
+    <section>
+      <HomePageImage />
+    </section>
+  );
 };
 
 export default Home;
