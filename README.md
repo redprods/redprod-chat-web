@@ -16,7 +16,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 * props-type
 * framer-motion
 * stylelint
-* styled-component
 * react-tostify
 
 
