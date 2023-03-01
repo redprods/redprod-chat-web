@@ -17,12 +17,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 * framer-motion
 * stylelint
 * react-tostify
-
+* ky
 
 ## Архитектура приложения
 
 * > src
-* >> app(Тут будут папки с роутом)
+* > app(Тут будут папки с роутом)
 * >assets
 * >components
 * >constants
@@ -46,3 +46,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### **Используйте `PascalCase`
 для названия файлов, например,`ReservationCard.js`
+
+## Создания компонента
+Он автоматически создает Lazy file + scss файл + index
+``` yarn cpn <NameComponent> ```
