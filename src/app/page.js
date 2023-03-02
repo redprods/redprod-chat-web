@@ -1,9 +1,10 @@
-import { HomePageImage, HomePageText, Login, Register } from 'components';
+import { HomePageImage, HomePageText } from "components";
 
 const Home = () => {
   return (
     <section>
-      <HomePageImage />
+      <HomePageText />
+      <HomePageImage/>
     </section>
   );
 };
