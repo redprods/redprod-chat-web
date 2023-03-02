@@ -54,11 +54,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 
 ## Правила создания пр
-1. ``` git checkout -b edittext(название ветки)
-git add .
-git commit -a -m "Название коммита"
-git push origin edittext(Название ветки)
-```
+1. ```git checkout -b edittext(название ветки)```<br/>
+```git add .``` <br/>
+```git commit -a -m "Название коммита"```<br/>
+```git push origin edittext(Название ветки)```
 2. Заходим и создает пр(желтый блок создается нажимает compare & pull request)
 3. Переподключаемся на основную ветку ```git checkout main```
 4. Обновляем данные ```git pull```
