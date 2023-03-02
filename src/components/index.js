@@ -1,6 +1,4 @@
-import { HomePageImage } from './HomePageImage';
-import { HomePageText } from './HomePageText';
-import { Register } from './Register';
-import { Login } from './Login';
+import { HomePageText } from "./HomePageText";
+import { HomePageImage } from "./HomePageImage";
+export {HomePageText, HomePageImage} 
 
-export { HomePageImage, HomePageText, Register, Login };
