@@ -47,7 +47,7 @@ body {
   margin: 0 auto;
   font-family: 'Gilroy-Medium';
   -webkit-font-smoothing: antialiased;
-  background: url(../assets/bg.png); 
+  /* background: url(../assets/bg.png);  */
   -moz-osx-font-smoothing: grayscale;
   transition: 0.2s ease-in-out;
   box-sizing: border-box;
