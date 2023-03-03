@@ -1,9 +1,9 @@
 .homePageImage{
-    margin-top: 100px;
-    width: 60%;
-
+    margin-top: 150px;
+    width: 52%;
     display:flex;
     column-gap: 23px;
+
     .man{
         width: 336px;
         z-index: 10;
@@ -17,6 +17,7 @@
         img{
             width: 100%;
             z-index: 10;
+            pointer-events: none;
         }
     }
     .woman{
@@ -32,6 +33,7 @@
         img{
             width: 100%;
             z-index: 10;
+            pointer-events: none;
 
         }
     }

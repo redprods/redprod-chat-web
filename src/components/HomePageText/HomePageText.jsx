@@ -10,7 +10,7 @@ export const HomePageText = () => {
    return <div className={styles.homeText}>
     <h1>Create your <br/> Team chat</h1>
     <p>Fast, easy & unlimited team chat services.</p>
-    <div>
+    <div className={styles.buttons}>
       <Link href="/">Login</Link>
       <Link href="/">Register</Link>
    </div>

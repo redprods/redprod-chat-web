@@ -2,8 +2,8 @@ import { HomePageImage, HomePageText } from "components";
 
 const Home = () => {
   return (
-    <section>
-      {/* <HomePageText /> */}
+    <section className="Wrapper">
+      { <HomePageText /> }
       <HomePageImage/>
     </section>
   );

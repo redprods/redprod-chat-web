@@ -18,6 +18,7 @@
   font-size: normal;
 }
 
+
 body,
 h1,
 h2,
@@ -47,7 +48,8 @@ body {
   margin: 0 auto;
   font-family: 'Gilroy-Medium';
   -webkit-font-smoothing: antialiased;
-  /* background: url(../assets/bg.png);  */
+   /* background: url(../assets/bg.png);   */
+   background: linear-gradient(90deg, rgba(211,233,234,1) 0%, rgba(244,243,250,1) 48%, rgba(215,185,231,1) 100%);
   -moz-osx-font-smoothing: grayscale;
   transition: 0.2s ease-in-out;
   box-sizing: border-box;
@@ -169,4 +171,9 @@ body {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+.Wrapper {
+  display: flex;
+  flex-direction: row;
 }
