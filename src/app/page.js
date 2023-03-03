@@ -3,7 +3,7 @@ import { HomePageImage, HomePageText } from "components";
 const Home = () => {
   return (
     <section>
-      <HomePageText />
+      {/* <HomePageText /> */}
       <HomePageImage/>
     </section>
   );
