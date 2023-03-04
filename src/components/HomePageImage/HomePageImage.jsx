@@ -10,8 +10,9 @@ import dotstop from 'assets/dotstop.png'
 import man from 'assets/man.png'
 import woman from 'assets/woman.png'
 import dotsmid from 'assets/dotsmid.png'
-
-
+import message from 'assets/message.png'
+import messagetype from 'assets/messagetype.png'
+import messagewoman from 'assets/messagewoman.png'
 
 export const HomePageImage = () => {
   return <div className={styles.homePageImage}>
@@ -22,8 +23,9 @@ export const HomePageImage = () => {
       animate={{ y: 0 , opacity: 1 }}
       transition={{ type: "spring" }}
       >
-        <section>
-          
+        <section className={styles.messageTop}>
+          <Image src={message} alt="message" />
+          <Image src={messagetype} alt="message" className={styles.messageType} />
         </section>
         <motion.div
       initial={{ scale: 0 }}
@@ -52,6 +54,9 @@ export const HomePageImage = () => {
       animate={{ y: 0 , opacity: 1 }}
       transition={{ type: "spring" }}
       >
+          <section className={styles.messageTop}>
+          <Image src={messagewoman} alt="message"/>
+        </section>
            <motion.div
       initial={{ scale: 0 }}
       animate={{x: 0, y:0 , scale: 1 }}

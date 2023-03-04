@@ -1,13 +1,28 @@
 .homePageImage{
-    margin-top: 100px;
-    width: 60%;
-
+    margin-top: 150px;
+    width: 52%;
+    transition: .3s ease-in-out;
     display:flex;
     column-gap: 23px;
+
     .man{
         width: 336px;
         z-index: 10;
         position:relative;
+        
+        .messageTop{
+            position: absolute;
+            top: 30px;
+            right: -330px;
+            
+            img{
+                width: 302px;
+            }
+            .messageType{
+                width: 155px;
+            }
+        }
+
         div{
             position: absolute;
             top: -40px;
@@ -17,12 +32,24 @@
         img{
             width: 100%;
             z-index: 10;
+            pointer-events: none;
         }
     }
     .woman{
         width: 336px;
-        margin-top: 250px;
+        margin-top: 300px;
         position:relative;
+
+        .messageTop{
+            position: absolute;
+            top: 180px;
+            left: -330px;
+            
+            img{
+                width: 302px;
+            }
+        }
+
         div{
             position: absolute;
             top: -35px;
@@ -32,6 +59,7 @@
         img{
             width: 100%;
             z-index: 10;
+            pointer-events: none;
 
         }
     }
