@@ -1,7 +1,7 @@
-@font-face{ 
+@font-face {
   font-family: 'Gilroy-Bold';
-  src: url("../fonts/Gilroy-Bold.ttf");
-  font-weight:600;
+  src: url('../fonts/Gilroy-Bold.ttf');
+  font-weight: 600;
   font-size: large;
 }
 @font-face {
@@ -9,15 +9,13 @@
   src: url('../fonts/Gilroy-Medium.ttf');
   font-weight: 500;
   font-size: medium;
-
 }
-@font-face{ 
+@font-face {
   font-family: 'Gilroy-Regular';
-  src: url("../fonts/Gilroy-Regular.ttf");
+  src: url('../fonts/Gilroy-Regular.ttf');
   font-weight: 400;
   font-size: normal;
 }
-
 
 body,
 h1,
@@ -48,13 +46,17 @@ body {
   margin: 0 auto;
   font-family: 'Gilroy-Medium';
   -webkit-font-smoothing: antialiased;
-   /* background: url(../assets/bg.png);   */
-   background: linear-gradient(90deg, rgba(211,233,234,1) 0%, rgba(244,243,250,1) 48%, rgba(215,185,231,1) 100%);
+  /* background: url(../assets/bg.png);   */
+  background: linear-gradient(
+    90deg,
+    rgba(211, 233, 234, 1) 0%,
+    rgba(244, 243, 250, 1) 48%,
+    rgba(215, 185, 231, 1) 100%
+  );
   -moz-osx-font-smoothing: grayscale;
   transition: 0.2s ease-in-out;
   box-sizing: border-box;
   font-size: 16px;
-
 }
 p {
   font-family: 'Roboto Mono', monospace;
@@ -173,7 +175,7 @@ body {
   }
 }
 
-.Wrapper {
+.wrapper {
   display: flex;
   flex-direction: row;
 }

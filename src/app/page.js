@@ -1,10 +1,12 @@
 import { HomePageImage, HomePageText } from "components";
+import { Login } from "components/Login";
 
 const Home = () => {
   return (
-    <section className="Wrapper">
-      { <HomePageText /> }
-      <HomePageImage/>
+    <section className="wrapper">
+      <HomePageText /> 
+      {/* <HomePageImage/> */}
+      <Login/>
     </section>
   );
 };

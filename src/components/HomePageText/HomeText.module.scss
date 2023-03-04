@@ -1,3 +1,7 @@
+.logIn{
+  opacity: 0;
+  pointer-events: none;
+}
 .homeText {
     width: 50%;
     display: flex;
@@ -5,7 +9,7 @@
     flex-direction: column;
     margin-top: 210px;
     user-select: none;
-  h1{
+    h1{
     font-weight: 700;
     font-size: 76px;
     color: #353333;
