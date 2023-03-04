@@ -11,12 +11,11 @@ import useOnClickOutside from 'hooks/useOnClickOutside';
 
 export const HomePageText = () => {
   const ref = React.useRef();
-  // State for our modal
-  const [isModalOpen, setModalOpen] = useState(false);
-  // Call hook passing in the ref and a function to call on outside click
-  useOnClickOutside(ref, () => setModalOpen(false));
-
   const [isLogin, setIsLogin] = useState(false);
+  const [isRegister, setIsRegister] = useState(false);
+
+  useOnClickOutside(ref, () => setIsLogin(false));
+  useOnClickOutside(ref, () => setIsRegister(false));
 
   return (
     <div className={styles.homeText}>
@@ -25,17 +24,24 @@ export const HomePageText = () => {
       </h1>
       <p>Fast, easy & unlimited team chat services.</p>
       <div className={styles.buttons}>
-        <button onClick={() => setModalOpen(true)}>Login</button>
-        <button>Register</button>
+        <button onClick={() => setIsLogin(true)}>Login</button>
+        <button onClick={() => setIsRegister(true)}>Register</button>
       </div>
 
       <div>
-        {isModalOpen && (
-          <div
-            className={cx(styles.ModalLogin, isModalOpen && styles.ModalActive)}
-          >
+        {isLogin && (
+          <div className={cx(styles.ModalLogin, isLogin && styles.ModalActive)}>
             <div ref={ref} className={styles.ModalBlock}>
               <Login />
+            </div>
+          </div>
+        )}
+        {isRegister && (
+          <div
+            className={cx(styles.ModalLogin, isRegister && styles.ModalActive)}
+          >
+            <div ref={ref} className={styles.ModalBlock}>
+              <h1>zxc</h1>
             </div>
           </div>
         )}
