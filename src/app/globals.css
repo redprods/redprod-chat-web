@@ -178,4 +178,22 @@ body {
 .wrapper {
   display: flex;
   flex-direction: row;
+  position: relative;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.copyright h3 {
+  font-weight: 400;
+  font-size: 17px;
+  color: #5A5A5A;
+}
+
+.copyright span {
+  color: red;
 }

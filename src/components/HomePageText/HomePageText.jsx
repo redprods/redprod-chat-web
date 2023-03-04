@@ -1,19 +1,27 @@
 "use client"
 import React,{useState} from "react";
-import Link from 'next/link'
 import styles from './HomeText.module.scss'
 import cx from 'classnames';
 
+import {Login} from 'components/Login'
+
+// className={cx(styles.homeText, isLogin && styles.logIn)}>
+
 export const HomePageText = () => {
-   const [isLogin, setIsLogin] = useState(false) 
 
+   const [isLogin, setIsLogin] = useState(false)
 
-   return <div className={cx(styles.homeText, isLogin && styles.logIn)}>
+   return <div className={styles.homeText}>
     <h1>Create your <br/> Team chat</h1>
     <p>Fast, easy & unlimited team chat services.</p>
     <div className={styles.buttons}>
-      <Link href="/" onClick={() => setIsLogin(!isLogin)}>Login</Link>
-      <Link href="/">Register</Link>
+      <button onClick={() => setIsLogin(!isLogin)}>Login</button>
+      <button>Register</button>
    </div>
-    </div>
+   <div className={cx(styles.ModalLogin, isLogin && styles.ModalActive)}>
+      <div className={styles.ModalBlock}>
+         <Login/>
+      </div>
+   </div>
+    </div> 
 }
