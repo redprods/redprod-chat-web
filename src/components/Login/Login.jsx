@@ -11,35 +11,49 @@ import lock from 'assets/lock.svg';
 import { Input } from 'components/Input';
 import { Player } from '@lottiefiles/react-lottie-player';
 import hello from 'assets/87845-hello.json';
+import axios from 'axios';
 
-export const Login = () => {
-  const [text, setText] = useState('Login');
+export const Login = ({ login }) => {
+  const [text, setText] = useState(login ? 'Register' : 'Login');
   const [animate, setAnimate] = useState(true);
 
   setInterval(() => {
-    setText('Good');
     setAnimate(true);
   }, 6000);
 
   const checkText = () => {
-    if (text === 'Login') {
+    if (text === 'Login' || text === 'Register') {
       return <BsChevronCompactUp />;
     } else if (text === 'Good') {
       return <AiOutlineCheck />;
     }
   };
   return (
-    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+    <div className="form_main">
       <Formik
         initialValues={{
-          username: '',
+          login: '',
           password: '',
         }}
         onSubmit={(values) => {
-          // const account = { username: 's10wn', email: 'check@gmail.com', password: 'qweasdzxc' }
-          axios.post('http://127.0.0.1:8000/login', values).then((res) => {
-            localStorage.setItem('access_token', res.data.access);
-          });
+          if (login) {
+            axios
+              .post('http://localhost/api/auth/register', values)
+              .then((res) => {
+                setText('Good');
+                console.log('good');
+                localStorage.setItem('token', res.data.accessToken);
+              });
+          } else {
+            axios
+              .post('http://localhost/api/auth/login', values)
+              .then((res) => {
+                setText('Good');
+                console.log('good');
+                localStorage.setItem('token', res.data.accessToken);
+              });
+          }
+
           toast.success('GOOD', {
             position: 'bottom-center',
             autoClose: 2500,
@@ -54,7 +68,7 @@ export const Login = () => {
       >
         {() => (
           <Form>
-            <Input image={user} label={'Username'} types={'username'} />
+            <Input image={user} label={'Username'} types={'login'} />
             <Input image={lock} label={'Password'} types={'password'} />
 
             <div className="auth_btn">
@@ -63,6 +77,7 @@ export const Login = () => {
                 className={cx(
                   text === 'Loading' && 'btn_active',
                   text === 'Login' && 'btn_normal',
+                  text === 'Register' && 'btn_normal',
                   text === 'Good' && 'btn_success'
                 )}
               >

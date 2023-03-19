@@ -41,7 +41,7 @@ export const HomePageText = () => {
             className={cx(styles.ModalLogin, isRegister && styles.ModalActive)}
           >
             <div ref={ref} className={styles.ModalBlock}>
-              <h1>zxc</h1>
+              <Login login={true} />
             </div>
           </div>
         )}

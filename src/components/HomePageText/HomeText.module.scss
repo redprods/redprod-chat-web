@@ -1,93 +1,93 @@
 .homeText {
-    width: 50%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 210px;
+  user-select: none;
+  h1{
+  font-weight: 700;
+  font-size: 76px;
+  color: #353333;
+  margin-bottom: 20px;
+}
+
+p{
+  font-weight: 400;
+  font-size: 24px;
+  color: #5A5A5A;
+}
+
+
+.buttons{
+  user-select: all;
+  display: flex;
+  column-gap: 30px;
+  margin-top: 43px;
+  width: 100%;
+  button{ 
+    font-weight: 500;
+    background: #D9D9D9;
+    border-radius: 13px;
+    font-size: 24px;
+    width: 42%;
+    height: 65px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    margin-top: 210px;
-    user-select: none;
-    h1{
-    font-weight: 700;
-    font-size: 76px;
-    color: #353333;
-    margin-bottom: 20px;
+    align-items: center;
   }
+}
+.ModalLogin{
+  @keyframes open{
+    from{
+      bottom: -100px;
+  opacity: 0;
 
-  p{
-    font-weight: 400;
-    font-size: 24px;
-    color: #5A5A5A;
-  }
-  
-
-  .buttons{
-    user-select: all;
-    display: flex;
-    column-gap: 30px;
-    margin-top: 43px;
-    width: 100%;
-    button{ 
-      font-weight: 500;
-      background: #D9D9D9;
-      border-radius: 13px;
-      font-size: 24px;
-      width: 42%;
-      height: 65px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    }
+    to{
+      bottom: 0;
+      opacity: 1;
     }
   }
-  .ModalLogin{
-    @keyframes open{
-      from{
-        bottom: -100px;
-    opacity: 0;
+  position: fixed;
+  width: 100%;
 
-      }
-      to{
-        bottom: 0;
-        opacity: 1;
-      }
-    }
-    position: fixed;
-    width: 100%;
-
-    z-index: 15;
-    height: 100%;
-    left:0%;
-    transition: .2s ease-in-out;
-    -webkit-transition: .2s ease-in-out;
+  z-index: 15;
+  height: 100%;
+  left:0%;
+  transition: .2s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
 -moz-transition: .2s ease-in-out;
 -ms-transition:  .2s ease-in-out;
 -o-transition: .2s ease-in-out;
-    background: rgba(0, 0, 0, 0.58);
+  background: rgba(0, 0, 0, 0.58);
 
-    .ModalBlock{
-      width: 1440px;
-      position: absolute;
-      bottom: -100px;
-      border-radius: 20px 20px 0 0;
-      z-index: 20;
-      height: 350px;
-    animation: open .3s forwards ease-in-out;
+  .ModalBlock{
+    width: 1440px;
+    position: absolute;
+    bottom: -100px;
+    border-radius: 20px 20px 0 0;
+    z-index: 20;
+    height: 350px;
+  animation: open .3s forwards ease-in-out;
 
-      left:50%;
-      padding: 20px;
-      transition: .3s ease-in-out;
-      -webkit-transition: .3s ease-in-out;
-  -moz-transition: .3s ease-in-out;
-  -ms-transition:  .3s ease-in-out;
-  -o-transition: .3s ease-in-out;
-      transform: translateX(-50%);
-      background:rgb(239, 239, 239);
-    }
+    left:50%;
+    padding: 20px;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+-moz-transition: .3s ease-in-out;
+-ms-transition:  .3s ease-in-out;
+-o-transition: .3s ease-in-out;
+    transform: translateX(-50%);
+    background:rgb(239, 239, 239);
   }
-  .ModalActive{
-    opacity: 1;
-    pointer-events: all;
+}
+.ModalActive{
+  opacity: 1;
+  pointer-events: all;
+  bottom: 0;
+  .ModalBlock{
     bottom: 0;
-    .ModalBlock{
-      bottom: 0;
-    }
   }
+}
 }
