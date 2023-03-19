@@ -1,1 +1,120 @@
-.login{}
+.form_main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  form{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    button{
+      width: 60%;
+      height: 60px;
+      border-radius: 15px;
+      display: flex;
+      column-gap: 30px;
+      font-size: 24px;
+      align-items: center;
+      
+      .check-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 20px inset #fff, 0 2px 3px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-left: 15px;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+      }
+    }
+  }
+}
+
+button{
+    transition: .3s ease-in-out;
+  }
+  button:active {
+    transform: scale(0.9);
+  }
+  .btn_normal{
+    background: green;
+  }
+  .btn_active{
+    background: red;
+    user-select: none;
+    pointer-events: none;
+  }
+  .btn_success{
+    background: yellow;
+  }
+  .zxc{
+    box-shadow: 0 0 0 0 inset;
+    border: 2px solid transparent;
+    border-top-color: #fff;
+    -webkit-animation: spin 3s ease infinite;
+    animation: spin 3s ease infinite;
+-webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+  }
+  
+  @-webkit-keyframes spin {
+    0% {
+      box-shadow: none;
+      transform: rotate(0);
+      border-top-color: #fff;
+    }
+    20% {
+      box-shadow: none;
+      transform: rotate(360deg);
+      border-top-color: #fff;
+    }
+    40% {
+      box-shadow: none;
+      transform: rotate(720deg);
+      border-top-color: #fff;
+    }
+    60% {
+      box-shadow: none;
+      transform: rotate(1080deg);
+      border-top-color: #fff;
+    }
+    100% {
+      box-shadow: none;
+      transform: rotate(1080deg);
+      border-top-color: #fff;
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      box-shadow: none;
+      transform: rotate(0);
+      border-top-color: #fff;
+    }
+    20% {
+      box-shadow: none;
+      transform: rotate(360deg);
+      border-top-color: #fff;
+    }
+    40% {
+      box-shadow: none;
+      transform: rotate(720deg);
+      border-top-color: #fff;
+    }
+    60% {
+      box-shadow: none;
+      transform: rotate(1080deg);
+      border-top-color: #fff;
+    }
+    100% {
+      box-shadow: none;
+      transform: rotate(1080deg);
+      border-top-color: #fff;
+    }
+  }
