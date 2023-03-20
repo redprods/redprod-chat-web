@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './MenuProfile.scss'
+import styles from './MenuProfile.module.scss'
 
 export const MenuCard = ({name,icon}) => {
   return (
