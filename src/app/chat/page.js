@@ -21,10 +21,10 @@ import { ChatPage } from 'components/ChatPage';
   return (
     <Suspense fallback={<Loading />}>
       <MenuProfile/>
-      {/* <div>
+      <div>
         <Dialog/>
         <ChatPage/>
-      </div> */}
+      </div>
   </Suspense>
   )
 }
