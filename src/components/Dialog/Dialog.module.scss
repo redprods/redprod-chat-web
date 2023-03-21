@@ -1,0 +1,30 @@
+
+.search  {
+
+display: flex;
+column-gap: 15px;
+
+
+input {
+    height: 60px;
+    width: 321px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 21px -6px rgba(0, 0, 0, 0.25);
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+svg {
+    font-size: 27px;
+    color: #3F74F2;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 21px -6px rgba(0, 0, 0, 0.25);
+}
+}
