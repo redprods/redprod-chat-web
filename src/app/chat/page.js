@@ -7,6 +7,8 @@ import { MenuProfile } from 'components/MenuProfile';
 import { Dialog } from 'components/Dialog';
 import { ChatPage } from 'components/ChatPage';
 
+import styles from './chat.module.scss'
+
  const Home = () => {
   // const router = useRouter();
   // useLayoutEffect(() => {
@@ -21,7 +23,7 @@ import { ChatPage } from 'components/ChatPage';
   return (
     <Suspense fallback={<Loading />}>
       <MenuProfile/>
-      <div>
+      <div className={styles.chat_main}>
         <Dialog/>
         <ChatPage/>
       </div>

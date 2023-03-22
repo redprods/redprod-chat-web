@@ -1,0 +1,43 @@
+.chatPage{
+    width: 100%;
+    background: radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+backdrop-filter: blur(21px);
+/* Note: backdrop-filter has minimal browser support */
+    padding: 20px;
+border-radius: 0px 20px 20px 0px;
+}
+
+
+
+.chat_info{
+    background: #fff;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img{
+        width: 70px;
+        // border-radius: 10px;
+        height: 70px;
+    }
+
+    .user_chat{
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+   
+        h1{
+            font-weight: 600;
+            font-size: 24px;
+            margin-bottom: 3px;
+        }
+        h3{
+            font-weight: 400;
+            font-size: 17px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+
+}
