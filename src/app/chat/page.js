@@ -10,16 +10,16 @@ import { ChatPage } from 'components/ChatPage';
 import styles from './chat.module.scss'
 
  const Home = () => {
-  // const router = useRouter();
-  // useLayoutEffect(() => {
-  //   if (!isAuthenticated()) {
-  //     router.push('/');
-  //     console.log('ss');
-  //   }
-  //   else{
+  const router = useRouter();
+  useLayoutEffect(() => {
+    if (!isAuthenticated()) {
+      router.push('/');
+      console.log('ss');
+    }
+    else{
       
-  //   }
-  // }, []);
+    }
+  }, []);
   return (
     <Suspense fallback={<Loading />}>
       <MenuProfile/>

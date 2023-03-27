@@ -36,23 +36,16 @@ export const Login = ({ login }) => {
           password: '',
         }}
         onSubmit={(values) => {
-          if (login) {
-            axios
-              .post('http://localhost/api/auth/register', values)
-              .then((res) => {
-                setText('Good');
-                console.log('good');
-                localStorage.setItem('token', res.data.accessToken);
-              });
-          } else {
-            axios
-              .post('http://localhost/api/auth/login', values)
-              .then((res) => {
-                setText('Good');
-                console.log('good');
-                localStorage.setItem('token', res.data.accessToken);
-              });
-          }
+          axios
+            .post(
+              `http://localhost/api/auth/${login ? 'register' : 'login'}`,
+              values
+            )
+            .then((res) => {
+              setText('Good');
+              console.log('good');
+              localStorage.setItem('token', res.data.accessToken);
+            });
 
           toast.success('GOOD', {
             position: 'bottom-center',

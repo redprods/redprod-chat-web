@@ -1,0 +1,37 @@
+.chatForm{
+    padding-right: 20px;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    border-top:1px solid rgba(0, 0, 0, 0.8);
+border-radius: 0px 0px 20px 20px;
+}
+.chatForm input{
+    width: 95%;
+border-radius: 0px 0px 0px 20px;
+    background: transparent;
+    height: 100%;
+}
+.chatForm button{
+    width: 5%;
+    position: relative;
+    height: 50px;
+border-radius: 10px;
+background: #55A0F8;
+box-shadow: 0px 4px 17px -3px #55A0F8;
+    color: #fff;
+    svg{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
